@@ -49,7 +49,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   //Check if all numbers are divisible by 5. 
   //Cache the result in a variable.
-  let thisLogic1 = n1%5 ===0 && n2%5 ===0 && n3%5 ===0 && n4%5 ===0;
+  let thisLogic1 = n1%5 === 0 && n2%5 === 0 && n3%5 === 0 && n4%5 === 0;
   console.log(thisLogic1);
  
   //Check if the first number is larger than the last. 
@@ -110,8 +110,14 @@ console.log(fuelAt75);
 //Will your budget be enough to cover the fuel expense?
 //The cost of fuel for the hole trip
 // at 55 / 60 /75 miles per hour:
-//let costOfFuel55 = costOfFuel55 * fuelAt55;
-//console.log(costOfFuel55);
+let costOfFuel55 = costOfFuel * fuelAt55;
+console.log(costOfFuel55);
+
+let costOfFuel60 = costOfFuel * fuelAt60;
+console.log(costOfFuel60);
+
+let costOfFuel75 = costOfFuel * fuelAt75;
+console.log(costOfFuel77);
 
 
 
