@@ -8,17 +8,20 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
+console.log(isSum50);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
+console.log(isTwoOdd);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+console.log(isOver25);
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -70,9 +73,11 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //so that we do not need to use 
   //the NOT operator (!) in other logic comparisons. 
   //Rename the variable as appropriate.
-  let is25 = 25;
+  
+  let newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25) < 0;
+  console.log(newIsOver25);
 
-  let newIsOver25 = (n1 - 25) >0 || (n2 - 25) > 0 || (n3 - 25) > 0 || (n4 - 25) > 0;
+  let newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
   console.log(newIsOver25);
 
  //The distance of the trip, in total, is 1,500 miles.
@@ -80,7 +85,33 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
  
  //Your car’s fuel efficiency is as follows:
 //At 55 miles per hour, you get 30 miles per gallon.
+//At 60 miles per hour, you get 28 miles per gallon.
+//At 75 miles per hour, you get 23 miles per gallon.
 
+let fuelAt55miles = 30;
+let fuelAt60miles = 28;
+let fuelAt75miles = 23;
+
+//You have a fuel budget of $175.
+let fuelBudget = 175;
+
+//The average cost of fuel is $3 per gallon.
+let costOfFuel =  3;
+
+//How many gallons of fuel will you need for the entire trip?
+// at 55 / 60 /75 miles per hour:
+let fuelAt55 = tripDistance / fuelAt55miles;
+console.log(fuelAt55);
+let fuelAt60 = tripDistance / fuelAt60miles;
+console.log(fuelAt60);
+let fuelAt75 = tripDistance / fuelAt75miles;
+console.log(fuelAt75);
+
+//Will your budget be enough to cover the fuel expense?
+//The cost of fuel for the hole trip
+// at 55 / 60 /75 miles per hour:
+//let costOfFuel55 = costOfFuel55 * fuelAt55;
+//console.log(costOfFuel55);
 
 
 
