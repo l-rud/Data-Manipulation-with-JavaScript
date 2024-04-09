@@ -55,6 +55,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //Subtract the first number from the second number.
   let thisLogic3 = n2 - n1;
   console.log(thisLogic3);
+  //Multiply the result by the third number.
+  let thisLogic4 = thisLogic3 * n3;
+  console.log(thisLogic4);
+
 
 
 
