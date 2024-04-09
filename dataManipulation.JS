@@ -48,19 +48,38 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //Cache the result in a variable.
   let thisLogic1 = n1%5 ===0 && n2%5 ===0 && n3%5 ===0 && n4%5 ===0;
   console.log(thisLogic1);
+ 
   //Check if the first number is larger than the last. 
   //Cache the result in a variable.
   let thisLogic2 = n1 > n2 && n1 > n3 && n1 > n4;
   console.log(thisLogic2);
+  
   //Subtract the first number from the second number.
   let thisLogic3 = n2 - n1;
   console.log(thisLogic3);
+  
   //Multiply the result by the third number.
   let thisLogic4 = thisLogic3 * n3;
   console.log(thisLogic4);
+  
   //Find the remainder of dividing the result by the fourth number.
   let thisLogic5 = thisLogic4%n4;
   console.log(thisLogic5);
+
+  //Change the way that isOver25 calculates 
+  //so that we do not need to use 
+  //the NOT operator (!) in other logic comparisons. 
+  //Rename the variable as appropriate.
+  let is25 = 25;
+
+  let newIsOver25 = (n1 - 25) >0 || (n2 - 25) > 0 || (n3 - 25) > 0 || (n4 - 25) > 0;
+  console.log(newIsOver25);
+
+ //The distance of the trip, in total, is 1,500 miles.
+ let tripDistance = 1500;
+ 
+ //Your car’s fuel efficiency is as follows:
+//At 55 miles per hour, you get 30 miles per gallon.
 
 
 
