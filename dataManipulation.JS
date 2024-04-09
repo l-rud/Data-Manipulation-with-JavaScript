@@ -52,6 +52,11 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //Cache the result in a variable.
   let thisLogic2 = n1 > n2 && n1 > n3 && n1 > n4;
   console.log(thisLogic2);
-  
+  //Subtract the first number from the second number.
+  let thisLogic3 = n2 - n1;
+  console.log(thisLogic3);
+
+
+
 
 
