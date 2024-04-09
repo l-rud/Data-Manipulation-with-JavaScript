@@ -87,6 +87,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 //At 55 miles per hour, you get 30 miles per gallon.
 //At 60 miles per hour, you get 28 miles per gallon.
 //At 75 miles per hour, you get 23 miles per gallon.
+let milesPerHour55 = 55;
+let milesPerHour60 = 60;
+let milesPerHour75 = 75;
 
 let fuelAt55miles = 30;
 let fuelAt60miles = 28;
@@ -100,24 +103,36 @@ let costOfFuel =  3;
 
 //How many gallons of fuel will you need for the entire trip?
 // at 55 / 60 /75 miles per hour:
-let fuelAt55 = tripDistance / fuelAt55miles;
+let fuelAt55 = Math.round(tripDistance / fuelAt55miles);
 console.log(fuelAt55);
-let fuelAt60 = tripDistance / fuelAt60miles;
+let fuelAt60 = Math.round(tripDistance / fuelAt60miles);
 console.log(fuelAt60);
-let fuelAt75 = tripDistance / fuelAt75miles;
+let fuelAt75 = Math.round(tripDistance / fuelAt75miles);
 console.log(fuelAt75);
 
 //Will your budget be enough to cover the fuel expense?
 //The cost of fuel for the hole trip
 // at 55 / 60 /75 miles per hour:
-let costOfFuel55 = costOfFuel * fuelAt55;
+let costOfFuel55 = Math.round(costOfFuel * fuelAt55);
 console.log(costOfFuel55);
 
-let costOfFuel60 = costOfFuel * fuelAt60;
+let costOfFuel60 = Math.round(costOfFuel * fuelAt60);
 console.log(costOfFuel60);
 
-let costOfFuel75 = costOfFuel * fuelAt75;
-console.log(costOfFuel77);
+let costOfFuel75 = Math.round(costOfFuel * fuelAt75);
+console.log(costOfFuel75);
+
+//Compare the results when traveling 
+//at an average of 55, 60, and 75 miles per hour.
+console.log(`When traveling at an average of ${milesPerHour55} miles per hour, the cost of fuel for the hole trip
+will be \$${costOfFuel55}.`);
+
+console.log(`When traveling at an average of ${milesPerHour60} miles per hour, the cost of fuel for the hole trip
+will be \$${costOfFuel60}.`);
+
+console.log(`When traveling at an average of ${milesPerHour75} miles per hour, the cost of fuel for the hole trip
+will be \$${costOfFuel75}.`);
+ //Which makes the most sense for the trip?
 
 
 
