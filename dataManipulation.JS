@@ -58,6 +58,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //Multiply the result by the third number.
   let thisLogic4 = thisLogic3 * n3;
   console.log(thisLogic4);
+  //Find the remainder of dividing the result by the fourth number.
+  let thisLogic5 = thisLogic4%n4;
+  console.log(thisLogic5);
+
 
 
 
