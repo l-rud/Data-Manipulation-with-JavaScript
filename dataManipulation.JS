@@ -167,5 +167,5 @@ console.log(tripTotalHours60);
 let tripTotalHours75 = Math.round(tripDistance / milesPerHour75);
 console.log(tripTotalHours75);
 
-console.log("So, if traveling at an average of 55 miles per hour, the trip will take the most hours")
+console.log("So, if traveling at an average of 55 miles per hour, the trip will take the most hours");
 
