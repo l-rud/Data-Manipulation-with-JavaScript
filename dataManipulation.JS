@@ -80,7 +80,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   let newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
   console.log(newIsOver25);
 
- //The distance of the trip, in total, is 1,500 miles.
+ 
+ 
+ 
+  //The distance of the trip, in total, is 1,500 miles.
  let tripDistance = 1500;
  
  //Your car’s fuel efficiency is as follows:
@@ -110,7 +113,7 @@ console.log(fuelAt60);
 let fuelAt75 = Math.round(tripDistance / fuelAt75miles);
 console.log(fuelAt75);
 
-//Will your budget be enough to cover the fuel expense?
+
 //The cost of fuel for the hole trip
 // at 55 / 60 /75 miles per hour:
 let costOfFuel55 = Math.round(costOfFuel * fuelAt55);
@@ -133,14 +136,36 @@ will be \$${costOfFuel60}.`);
 console.log(`When traveling at an average of ${milesPerHour75} miles per hour, the cost of fuel for the hole trip
 will be \$${costOfFuel75}.`);
 
- //Which makes the most sense for the trip?
+//Will your budget be enough to cover the fuel expense?
+let enoughBudget55 = costOfFuel55 <= fuelBudget;
+console.log(enoughBudget55);
+
+let enoughBudget60 = costOfFuel60 <= fuelBudget;
+console.log(enoughBudget60);
+
+let enoughBudget75 = costOfFuel75 <= fuelBudget;
+console.log(enoughBudget75);
+
+console.log("The budget may only be enough when traveling 55 or 60 mph.");
+
+//Which makes the most sense for the trip?
  let cheapestTrip = Math.min(costOfFuel55, costOfFuel60, costOfFuel75);
  console.log(cheapestTrip);
 
  console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.")
 
+ //How long will the trip take, in hours?
+ // at 55 / 60 /75 miles per hour:
 
+ let tripTotalHours55 = Math.floor(tripDistance / milesPerHour55);
+ console.log(tripTotalHours55);
 
+ let tripTotalHours60 = Math.floor(tripDistance / milesPerHour60);
+ console.log(tripTotalHours60);
 
+ let tripTotalHours75 = Math.floor(tripDistance / milesPerHour75);
+ console.log(tripTotalHours75);
 
+ console.log("So, if traveling at an average of 75 miles per hour, the trip will take the less hours")
 
+ 
