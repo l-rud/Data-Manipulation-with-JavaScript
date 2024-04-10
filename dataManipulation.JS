@@ -76,10 +76,10 @@ console.log(thisLogic5);
 //the NOT operator (!) in other logic comparisons. 
 //Rename the variable as appropriate.
 
-let newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25) < 0;
+const newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25) < 0;
 console.log(newIsOver25);
 
-let newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
+const newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
 console.log(newIsOver25);
 
 
