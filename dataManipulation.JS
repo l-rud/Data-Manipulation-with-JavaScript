@@ -132,7 +132,12 @@ will be \$${costOfFuel60}.`);
 
 console.log(`When traveling at an average of ${milesPerHour75} miles per hour, the cost of fuel for the hole trip
 will be \$${costOfFuel75}.`);
+
  //Which makes the most sense for the trip?
+ let cheapestTrip = Math.min(costOfFuel55, costOfFuel60, costOfFuel75);
+ console.log(cheapestTrip);
+
+ console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.")
 
 
 
