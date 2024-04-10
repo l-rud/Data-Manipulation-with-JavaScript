@@ -81,7 +81,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   console.log(newIsOver25);
 
  
- 
+ // Part 2: Practical Math
  
   //The distance of the trip, in total, is 1,500 miles.
  let tripDistance = 1500;
