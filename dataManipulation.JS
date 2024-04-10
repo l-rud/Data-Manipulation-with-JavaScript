@@ -47,9 +47,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
-  //Part 1: Math Problems
+//Part 1: Math Problems
 
-  //Check if all numbers are divisible by 5. 
+//Check if all numbers are divisible by 5. 
 //Cache the result in a variable.
 let thisLogic1 = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
 console.log(thisLogic1);
@@ -158,14 +158,14 @@ console.log("So, the cheapest trip is a trip, when traveling at an average of 55
 //How long will the trip take, in hours?
 // at 55 / 60 /75 miles per hour:
 
-let tripTotalHours55 = Math.floor(tripDistance / milesPerHour55);
+let tripTotalHours55 = Math.round(tripDistance / milesPerHour55);
 console.log(tripTotalHours55);
 
-let tripTotalHours60 = Math.floor(tripDistance / milesPerHour60);
+let tripTotalHours60 = Math.round(tripDistance / milesPerHour60);
 console.log(tripTotalHours60);
 
-let tripTotalHours75 = Math.floor(tripDistance / milesPerHour75);
+let tripTotalHours75 = Math.round(tripDistance / milesPerHour75);
 console.log(tripTotalHours75);
 
-console.log("So, if traveling at an average of 75 miles per hour, the trip will take the less hours")
+console.log("So, if traveling at an average of 55 miles per hour, the trip will take the most hours")
 
