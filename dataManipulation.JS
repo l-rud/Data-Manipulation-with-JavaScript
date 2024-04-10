@@ -56,7 +56,7 @@ console.log(thisLogic1);
 
 //Check if the first number is larger than the last. 
 //Cache the result in a variable.
-let thisLogic2 = n1 > n2 && n1 > n3 && n1 > n4;
+let thisLogic2 = n1 > n4;
 console.log(thisLogic2);
 
 //Subtract the first number from the second number.
