@@ -80,7 +80,7 @@ const newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25)
 console.log(newIsOver25);
 
 const newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
-console.log(newIsOver25);
+console.log(newIsValid);
 
 
 // Part 2: Practical Math
