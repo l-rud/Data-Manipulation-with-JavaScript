@@ -47,7 +47,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
-//Check if all numbers are divisible by 5. 
+  //Part 1: Math Problems
+
+  //Check if all numbers are divisible by 5. 
 //Cache the result in a variable.
 let thisLogic1 = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
 console.log(thisLogic1);
