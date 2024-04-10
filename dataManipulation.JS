@@ -51,7 +51,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   //Check if all numbers are divisible by 5. 
 //Cache the result in a variable.
-let thisLogic1 = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+let thisLogic1 = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
 console.log(thisLogic1);
 
 //Check if the first number is larger than the last. 
