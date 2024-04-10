@@ -42,51 +42,51 @@ console.log(isValid);
 // but it SHOULD NOT be done this way. As programmers,
 // we break things into small, manageable pieces so that
 // they can be better understood, scaled, and maintained.
-const dontDoThis = ((n1 + n2 + n3 + n4) == 50) && 
-  ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
-  !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
+const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
+  ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
+  !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
-  //Check if all numbers are divisible by 5. 
-  //Cache the result in a variable.
-  let thisLogic1 = n1%5 === 0 && n2%5 === 0 && n3%5 === 0 && n4%5 === 0;
-  console.log(thisLogic1);
- 
-  //Check if the first number is larger than the last. 
-  //Cache the result in a variable.
-  let thisLogic2 = n1 > n2 && n1 > n3 && n1 > n4;
-  console.log(thisLogic2);
-  
-  //Subtract the first number from the second number.
-  let thisLogic3 = n2 - n1;
-  console.log(thisLogic3);
-  
-  //Multiply the result by the third number.
-  let thisLogic4 = thisLogic3 * n3;
-  console.log(thisLogic4);
-  
-  //Find the remainder of dividing the result by the fourth number.
-  let thisLogic5 = thisLogic4%n4;
-  console.log(thisLogic5);
+//Check if all numbers are divisible by 5. 
+//Cache the result in a variable.
+let thisLogic1 = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+console.log(thisLogic1);
 
-  //Change the way that isOver25 calculates 
-  //so that we do not need to use 
-  //the NOT operator (!) in other logic comparisons. 
-  //Rename the variable as appropriate.
-  
-  let newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25) < 0;
-  console.log(newIsOver25);
+//Check if the first number is larger than the last. 
+//Cache the result in a variable.
+let thisLogic2 = n1 > n2 && n1 > n3 && n1 > n4;
+console.log(thisLogic2);
 
-  let newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
-  console.log(newIsOver25);
+//Subtract the first number from the second number.
+let thisLogic3 = n2 - n1;
+console.log(thisLogic3);
 
- 
- // Part 2: Practical Math
- 
-  //The distance of the trip, in total, is 1,500 miles.
- let tripDistance = 1500;
- 
- //Your car’s fuel efficiency is as follows:
+//Multiply the result by the third number.
+let thisLogic4 = thisLogic3 * n3;
+console.log(thisLogic4);
+
+//Find the remainder of dividing the result by the fourth number.
+let thisLogic5 = thisLogic4 % n4;
+console.log(thisLogic5);
+
+//Change the way that isOver25 calculates 
+//so that we do not need to use 
+//the NOT operator (!) in other logic comparisons. 
+//Rename the variable as appropriate.
+
+let newIsOver25 = (n1 - 25) < 0 || (n2 - 25) < 0 || (n3 - 25) < 0 || (n4 - 25) < 0;
+console.log(newIsOver25);
+
+let newIsValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
+console.log(newIsOver25);
+
+
+// Part 2: Practical Math
+
+//The distance of the trip, in total, is 1,500 miles.
+let tripDistance = 1500;
+
+//Your car’s fuel efficiency is as follows:
 //At 55 miles per hour, you get 30 miles per gallon.
 //At 60 miles per hour, you get 28 miles per gallon.
 //At 75 miles per hour, you get 23 miles per gallon.
@@ -102,7 +102,7 @@ let fuelAt75miles = 23;
 let fuelBudget = 175;
 
 //The average cost of fuel is $3 per gallon.
-let costOfFuel =  3;
+let costOfFuel = 3;
 
 //How many gallons of fuel will you need for the entire trip?
 // at 55 / 60 /75 miles per hour:
@@ -112,7 +112,6 @@ let fuelAt60 = Math.round(tripDistance / fuelAt60miles);
 console.log(fuelAt60);
 let fuelAt75 = Math.round(tripDistance / fuelAt75miles);
 console.log(fuelAt75);
-
 
 //The cost of fuel for the hole trip
 // at 55 / 60 /75 miles per hour:
@@ -149,23 +148,22 @@ console.log(enoughBudget75);
 console.log("The budget may only be enough when traveling 55 or 60 mph.");
 
 //Which makes the most sense for the trip?
- let cheapestTrip = Math.min(costOfFuel55, costOfFuel60, costOfFuel75);
- console.log(cheapestTrip);
+let cheapestTrip = Math.min(costOfFuel55, costOfFuel60, costOfFuel75);
+console.log(cheapestTrip);
 
- console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.")
+console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.")
 
- //How long will the trip take, in hours?
- // at 55 / 60 /75 miles per hour:
+//How long will the trip take, in hours?
+// at 55 / 60 /75 miles per hour:
 
- let tripTotalHours55 = Math.floor(tripDistance / milesPerHour55);
- console.log(tripTotalHours55);
+let tripTotalHours55 = Math.floor(tripDistance / milesPerHour55);
+console.log(tripTotalHours55);
 
- let tripTotalHours60 = Math.floor(tripDistance / milesPerHour60);
- console.log(tripTotalHours60);
+let tripTotalHours60 = Math.floor(tripDistance / milesPerHour60);
+console.log(tripTotalHours60);
 
- let tripTotalHours75 = Math.floor(tripDistance / milesPerHour75);
- console.log(tripTotalHours75);
+let tripTotalHours75 = Math.floor(tripDistance / milesPerHour75);
+console.log(tripTotalHours75);
 
- console.log("So, if traveling at an average of 75 miles per hour, the trip will take the less hours")
+console.log("So, if traveling at an average of 75 miles per hour, the trip will take the less hours")
 
- 
