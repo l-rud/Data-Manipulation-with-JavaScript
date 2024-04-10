@@ -153,7 +153,7 @@ console.log("The budget may only be enough when traveling 55 or 60 mph.");
 let cheapestTrip = Math.min(costOfFuel55, costOfFuel60, costOfFuel75);
 console.log(cheapestTrip);
 
-console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.")
+console.log("So, the cheapest trip is a trip, when traveling at an average of 55 miles per hour.");
 
 //How long will the trip take, in hours?
 // at 55 / 60 /75 miles per hour:
